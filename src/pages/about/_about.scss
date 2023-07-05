@@ -1,0 +1,238 @@
+.about {
+  &__top {
+    margin-top: 9rem;
+  }
+
+  &__container-title {
+    max-width: 89rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-weight: 200;
+  }
+
+  &__container-text {
+    max-width: 89rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10rem auto 15rem;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 200;
+    text-align: justify;
+    flex: 0 50%;
+    padding: 0 2.5rem;
+
+    @include breakpoint("md") {
+      flex: 0 85%;
+    }
+  }
+
+  &__container-subtitle {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0 0;
+  }
+
+  &__subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+
+    &:first-child {
+      margin-right: 1.6rem;
+      font-weight: 400;
+    }
+  }
+
+  &__container-subtext {
+    max-width: 89rem;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto 0;
+  }
+
+  &__subtext {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0 2.5rem;
+    flex: 0 30%;
+
+    @include breakpoint("md") {
+      flex: 0 85%;
+      margin-top: 4rem;
+    }
+  }
+
+  &__carousel {
+    background: var(--color-dark-always);
+    padding: 6rem 5.5rem 18rem;
+    overflow-x: hidden;
+  }
+
+  &__title-carousel {
+    color: var(--color-light-always);
+    font-size: 2rem;
+    font-weight: 200;
+    padding-bottom: 10rem;
+    display: block;
+    text-align: center;
+  }
+
+  &__subtitle-carousel {
+    color: var(--color-light-always);
+    font-size: 1.4rem;
+    font-weight: 200;
+    padding-bottom: 5rem;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  &__carousel-progress {
+    margin-bottom: 4rem;
+  }
+}
+
+.join-us {
+  display: flex;
+  padding: 0 14.8rem;
+
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
+
+  @include breakpoint("md") {
+    flex-direction: column;
+  }
+
+  &__left {
+    flex: 1;
+    padding: 0 2.5rem;
+  }
+
+  &__list {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  &__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2.5rem;
+    justify-content: space-between;
+
+    @include breakpoint("md") {
+      margin-top: 4rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 200;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 1.4rem;
+    font-weight: 200;
+    gap: 3.5rem;
+  }
+}
+
+.profile {
+  display: flex;
+  padding: 0 14.8rem;
+
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
+
+  @include breakpoint("md") {
+    flex-direction: column;
+  }
+
+  &__column {
+    flex: 1;
+    padding: 0 2.5rem;
+  }
+
+  &__item {
+    min-height: 12.5rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    padding: 3rem 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 200;
+
+    a {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.awards {
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 0 18.3rem;
+  font-weight: 200;
+
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  padding: 0 18.3rem;
+
+  @include breakpoint("lg") {
+    padding: 0 6.8rem;
+  }
+
+  @include breakpoint("md") {
+    flex-direction: column;
+  }
+
+  &__item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 26.2rem;
+
+    @include breakpoint("md") {
+      &:last-child {
+        margin-top: 4rem;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 3.2rem;
+    padding: 1.5rem 0;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    font-weight: 200;
+  }
+}

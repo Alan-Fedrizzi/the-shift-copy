@@ -1,0 +1,148 @@
+.footer {
+  background: var(--color-dark-always);
+  color: var(--color-light-always);
+  width: 100%;
+  padding: 0 5.5rem;
+  overflow: hidden;
+
+  @include breakpoint("md") {
+    padding: 0 3.5rem;
+  }
+
+  @include breakpoint("sm") {
+    padding: 0 2rem;
+  }
+
+  &__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 0;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    &--thin {
+      font-weight: 400;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 15rem;
+    }
+  }
+
+  &__carousel {
+    margin-bottom: 15rem;
+  }
+
+  &__based {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @include breakpoint("md") {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__shell-container {
+    border-radius: 999px;
+    overflow: hidden;
+
+    &--dark {
+      margin-left: auto;
+    }
+
+    @include breakpoint("md") {
+      grid-column: -1;
+    }
+
+    @include breakpoint("sm") {
+      align-self: flex-end;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__up {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    @include breakpoint("md") {
+      display: none;
+    }
+  }
+
+  &__button-up {
+    margin-left: 2rem;
+  }
+
+  &__overflow {
+    overflow: hidden;
+  }
+
+  &__touch {
+    text-transform: uppercase;
+    font-size: 12rem;
+    margin: 4rem 0;
+    text-align: center;
+
+    @include breakpoint("lg") {
+      font-size: 10rem;
+    }
+
+    @include breakpoint("md") {
+      font-size: 7rem;
+    }
+
+    @include breakpoint("sm") {
+      font-size: 4rem;
+    }
+  }
+
+  &__social {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    @include breakpoint("sm") {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+
+  &__year {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @include breakpoint("md") {
+      display: none;
+    }
+  }
+
+  &__link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    @include breakpoint("sm") {
+      align-self: flex-start;
+    }
+  }
+}
